@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice {{ invoice.invoice_number }}</title>
+</head>
+
+<body>
+
+<h1>Invoice Details</h1>
+
+<p>
+    <strong>Invoice Number:</strong>
+    {{ invoice.invoice_number }}
+</p>
+
+<p>
+    <strong>Vendor:</strong>
+    {{ invoice.vendor }}
+</p>
+
+<p>
+    <strong>Amount:</strong>
+    {{ invoice.currency }}
+    {{ "%.2f"|format(invoice.amount) }}
+</p>
+
+<p>
+    <strong>Invoice Date:</strong>
+    {{ invoice.invoice_date }}
+</p>
+
+<p>
+    <strong>Due Date:</strong>
+    {{ invoice.due_date }}
+</p>
+
+<p>
+    <strong>Status:</strong>
+    {{ invoice.status }}
+</p>
+
+<a href="/invoices">← Back to invoices</a>
+
+</body>
+
+</html>

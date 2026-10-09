@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AP Invoice Created</title>
+</head>
+
+<body>
+
+<h1>Invoice Submitted Successfully</h1>
+
+<p>
+    Invoice
+    <strong>{{ invoice_number }}</strong>
+    was created in the AP system.
+</p>
+
+<p>
+    AP Record ID:
+    <strong>{{ record_id }}</strong>
+</p>
+
+<hr>
+
+<a href="/ap">View AP Records</a>
+
+<br><br>
+
+<a href="/ap/new">Create Another Invoice</a>
+
+</body>
+</html>

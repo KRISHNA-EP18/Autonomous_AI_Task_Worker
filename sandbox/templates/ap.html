@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AP Management</title>
+</head>
+
+<body>
+
+<h1>Accounts Payable</h1>
+
+<p>Manage invoices entering the company's AP system.</p>
+
+<p>
+    <a href="/ap/new">Create New AP Invoice</a>
+</p>
+
+<hr>
+
+<h2>AP Invoice Records</h2>
+
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Invoice Number</th>
+            <th>Vendor</th>
+            <th>Amount</th>
+            <th>Currency</th>
+            <th>Due Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    {% for record in records %}
+
+    <tr>
+        <td>
+            {{ record.invoice_number }}
+        </td>
+
+        <td>
+            {{ record.vendor }}
+        </td>
+
+        <td>
+            {{ "%.2f"|format(record.amount) }}
+        </td>
+
+        <td>
+            {{ record.currency }}
+        </td>
+
+        <td>
+            {{ record.due_date }}
+        </td>
+
+        <td>
+            {{ record.status }}
+        </td>
+    </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
