@@ -14,13 +14,13 @@ The demo covers task execution, invoice extraction, the human approval checkpoin
 
 ### 1. Task Interface
 
-![Task interface](screenshots/task interface.png)
+![Task interface](screenshots/task%20interface.png)
 
 The user provides a natural-language instruction to initiate the invoice-processing workflow.
 
 ### 2. Human Approval
 
-![Human approval](screenshots/human approval.png)
+![Human approval](screenshots/human%20approval.png)
 
 The workflow pauses for human approval before submitting the accounts-payable record.
 
@@ -38,7 +38,7 @@ The independent verifier checks the resulting record against the expected invoic
 
 ### 5. AP Invoice Records
 
-![AP invoice records](screenshots/ap invoice records.png)
+![AP invoice records](screenshots/ap%20invoice%20records.png)
 
 The accounts-payable records page provides visual evidence of the stored invoice record.
 
@@ -128,7 +128,7 @@ For additional implementation details, see [`docs/ARCHITECTURE.md`](docs/ARCHITE
 ## Project Structure
 
 ```text
-centr-align-ai-worker/
+-Autonomous-AI-Task_Worker/
 ├── app/
 │   ├── agent/
 │   ├── models/
