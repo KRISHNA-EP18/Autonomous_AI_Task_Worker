@@ -162,8 +162,8 @@ The exact files and directory contents may vary slightly with the current implem
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/KRISHNA-EP18/Autonomous_AI_Task_Worker.git
+cd Autonomous_AI_Task_Worker
 ```
 
 ### 2. Create and activate a virtual environment
